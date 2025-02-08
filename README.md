@@ -48,6 +48,7 @@ Bem-vindo ao repositório da landing page do **FitLife App**! Este projeto foi d
 - Integração com um backend para processar o formulário de captura de e-mails.
 - Adicionar animações mais complexas com JavaScript ou bibliotecas como GSAP.
 - Implementar um blog integrado para conteúdo sobre fitness e saúde.
+- Ajustar bugs de responsividade.
 
 ## 🤝 Contribuição
 
