@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="/public/img/green-heart.png" type="image/x-icon">k
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>FitLife</title>
+</head>
+<body class="bg-[#f5f5f5]">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-[#2E86AB] shadow-lg z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#hero" class="text-white font-bold text-xl">FitLife App</a>
+
+            <!-- Nav buttons -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-zinc-300 hover:text-white transition duration-300">Início</a>
+                <a href="#benefits" class="text-zinc-300 hover:text-white transition duration-300">Benefícios</a>
+                <a href="#depoimentos" class="text-zinc-300 hover:text-white transition duration-300">Depoimentos</a>
+            </nav>
+
+            <!-- Download Now -->
+            <a href="https://github.com/ojoaox/fit-life" target="_blank" class="hidden md:block bg-[#4CAF50] text-white px-4 py-2 rounded-full font-bold hover:bg-[#5cd561] transition duration-300">Baixe Agora</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('/public/img/woman-with-phone-16-9.png');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+          
+            <div class="relative z-10 text-center px-4">
+              <!-- Title -->
+              <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+                Transforme sua saúde com o FitLife App!
+              </h1>
+          
+              <!-- Subtitle -->
+              <p class="text-lg sm:text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+                Planos de treino personalizados, dicas de nutrição e muito mais. Tudo na palma da sua mão.
+              </p>
+          
+              <!-- CTA Button -->
+              <a href="#contact" class="inline-block bg-[#4CAF50] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#45a049] transition duration-300">
+                Quero Saber Mais
+              </a>
+            </div>
+          </section>
+
+        <!-- Benefits -->
+        <section id="benefits" class="benefits h-[50-vh] container mx-auto px-4 py-4 mt-40 flex justify-center align-center items-center bg-[#f5f5f5]">
+            <div class="container mx-auto px-4">
+                <div class="mb-16">
+                    <span class="text-sm text-gray-500 font-medium text-center block mb-2">B E N E F Í C I O S</span>
+                    <h2 class="text-4xl text-center font-bold text-gray-900">Por que escolher o FitLife App?</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <!-- Coluna 1 -->
+                  <div class="text-center">
+                    <div class="flex justify-center">
+                      <svg class="w-24 h-24 text-[#2e86ab]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#333333] mt-4">Treinos Personalizados</h3>
+                    <p class="text-[#333333] mt-2">Planos adaptados ao seu nível e objetivos.</p>
+                  </div>
+            
+                  <!-- Coluna 2 -->
+                  <div class="text-center">
+                    <div class="flex justify-center">
+                      <svg class="w-24 h-24 text-[#2e86ab]" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                      
+
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#333333] mt-4">Acompanhamento Nutricional</h3>
+                    <p class="text-[#333333] mt-2">Receba dicas de alimentação saudável.</p>
+                  </div>
+            
+                  <!-- Coluna 3 -->
+                  <div class="text-center">
+                    <div class="flex justify-center">
+                      <svg class="w-24 h-24 text-[#2e86ab]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#333333] mt-4">Comunidade Motivadora</h3>
+                    <p class="text-[#333333] mt-2">Conecte-se com outras pessoas e compartilhe seu progresso.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="depoimentos h-[75vh] container mx-auto px-4 py-24 flex justify-center align-center items-center bg-[#F5F5F5]">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-16">
+                    <span class="text-sm text-gray-500 font-medium text-center block mb-2">D E P O I M E N T O S</span>
+                    <h2 class="text-4xl text-center font-bold text-gray-900">O que nossos usuários estão dizendo!</h2>
+                </div>
+                <!--Slider wrapper-->
+        
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper w-max">
+                        <!-- Depoimento 1 -->
+                        <div class="swiper-slide">
+                            <div class="group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-2E86AB hover:shadow-sm slide_active:border-2E86AB">
+                                <div class="">
+                                    <div class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500">
+                                        <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z" fill="currentColor" />
+                                        </svg>
+                                        <span class="text-base font-semibold text-2E86AB">4.9</span>
+                                    </div>
+                                    <p class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
+                                        O FitLife mudou minha vida! Perdi 10kg em 3 meses.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                                    <img class="rounded-full h-10 w-10 object-cover" src="https://randomuser.me/api/portraits/women/44.jpg" alt="avatar" />
+                                    <div class="block">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500 mb-1">Ana, 28 anos</h5>
+                                        <span class="text-sm leading-4 text-gray-500">Usuária</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Depoimento 2 -->
+                        <div class="swiper-slide">
+                            <div class="group bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-2E86AB slide_active:border-2E86AB hover:shadow-sm">
+                                <div class="">
+                                    <div class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500">
+                                        <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z" fill="currentColor" />
+                                        </svg>
+                                        <span class="text-base font-semibold text-2E86AB">4.8</span>
+                                    </div>
+                                    <p class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
+                                        Adoro os treinos personalizados. Nunca fiquei tão motivado!
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5 pt-5 border-t border-solid border-gray-200">
+                                    <img class="rounded-full h-10 w-10 object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar" />
+                                    <div class="block">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500 mb-1">Carlos, 35 anos</h5>
+                                        <span class="text-sm leading-4 text-gray-500">Usuário</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Depoimento 3 -->
+                        <div class="swiper-slide">
+                            <div class="flex justify-between flex-col lg:w-full group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto slide_active:border-2E86AB hover:border-2E86AB hover:shadow-sm">
+                                <div class="">
+                                    <div class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500">
+                                        <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z" fill="currentColor" />
+                                        </svg>
+                                        <span class="text-base font-semibold text-2E86AB">4.7</span>
+                                    </div>
+                                    <p class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
+                                        A parte nutricional é incrível. Aprendi a comer melhor sem sacrifícios.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                                    <img class="rounded-full h-10 w-10 object-cover" src="https://randomuser.me/api/portraits/women/22.jpg" alt="avatar" />
+                                    <div class="block">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500 mb-1">Mariana, 22 anos</h5>
+                                        <span class="text-sm leading-4 text-gray-500">Usuária</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Depoimento 4 -->
+                        <div class="swiper-slide">
+                            <div class="group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-2E86AB hover:shadow-sm slide_active:border-2E86AB">
+                                <div class="">
+                                    <div class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500">
+                                        <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z" fill="currentColor" />
+                                        </svg>
+                                        <span class="text-base font-semibold text-2E86AB">4.9</span>
+                                    </div>
+                                    <p class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
+                                        Os treinos são desafiadores, mas sempre com orientação perfeita. Recomendo!
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                                    <img class="rounded-full h-10 w-10 object-cover" src="https://randomuser.me/api/portraits/men/45.jpg" alt="avatar" />
+                                    <div class="block">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500 mb-1">Pedro, 30 anos</h5>
+                                        <span class="text-sm leading-4 text-gray-500">Usuário</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Depoimento 5 -->
+                        <div class="swiper-slide">
+                            <div class="group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-2E86AB hover:shadow-sm slide_active:border-2E86AB">
+                                <div class="">
+                                    <div class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500">
+                                        <svg class="w-5 h-5" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z" fill="currentColor" />
+                                        </svg>
+                                        <span class="text-base font-semibold text-2E86AB">4.6</span>
+                                    </div>
+                                    <p class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800">
+                                        A equipe do FitLife é muito atenciosa. Me sinto motivada todos os dias!
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                                    <img class="rounded-full h-10 w-10 object-cover" src="https://randomuser.me/api/portraits/women/33.jpg" alt="avatar" />
+                                    <div class="block">
+                                        <h5 class="text-gray-900 font-medium transition-all duration-500 mb-1">Juliana, 25 anos</h5>
+                                        <span class="text-sm leading-4 text-gray-500">Usuária</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact h-[50vh] container mx-auto py-20 px-4 flex justify-center align-center items-center bg-[#f5f5f5]">
+            <div>
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-12 p-4">
+                  <div class="w-full text-center lg:text-left">
+                    <h2 class="text-[#333333] text-5xl font-extrabold mb-6">Experimente o FitLife App!</h2>
+                    <p class="text-lg text-gray-600">Cadastre-se para receber novidades e garantir acesso antecipado.</p>
+                  </div>
+          
+                  <div class="w-full max-lg:max-w-lg">
+                    <form class="flex items-center">
+                      <input type="email" placeholder="Insira seu endereço de email" class="w-full lg:w-[300px] text-[#333333] bg-white py-3.5 px-4 text-base border border-[#ddd] border-r-0 rounded-l-lg outline-none focus:border-[#4CAF50]" required />
+                      <a href="https://github.com/ojoaox/fit-life" class="bg-[#4CAF50] hover:bg-[#45a049] text-white text-base font-semibold tracking-wide py-3.5 px-6 border border-[#4CAF50] rounded-r-lg outline-none">
+                        Quero Acesso Antecipado
+                      </a>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2E86AB] text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <p class="text-white">FitLife App &copy; 2024</p>
+            <nav class="flex space-x-4">
+                <a href="https://github.com/ojoaox/fit-life"><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="0 0 496 512"><path fill="#fff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                <a href="https://x.com/ojoaox_"><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="0 0 512 512"><path fill="#fff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+            </nav>  
+            <nav class="flex space-x-4">
+                <a href="#" target="_blank" class="text-white hover:text-[#4CAF50] transition duration-300">Termos de Uso</a>
+                <a href="#" target="_blank" class="text-white hover:text-[#4CAF50] transition duration-300">Política de Privacidade</a>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/public/script.js"></script>
+</body>
+</html>
