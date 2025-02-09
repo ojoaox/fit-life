@@ -39,7 +39,7 @@ Bem-vindo ao repositório da landing page do **FitLife App**! Este projeto foi d
 ## 🛠️ Como Executar o Projeto
   - **Clone o repositório utilizando o :**
    ```
-   git clone https://github.com/seu-usuario/fitlife-landing-page.git
+   git clone https://github.com/ojoaox/fitlife-landing-page.git
    ```
 
 - Abra o arquivo index.html com a extensão LiveServer do VSCode
